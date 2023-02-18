@@ -91,9 +91,9 @@ export const validatePhoneNumberConvencional = (phoneNumber) => {
     return result;
   }
   if (phoneNumber.startsWith("02")) {
-    if (phoneNumber.length != 9) {
+    if (phoneNumber.length != 7) {
       result.result = false;
-      result.message = "Debe ingresar 9 dígitos";
+      result.message = "Debe ingresar 7 dígitos";
       return result;
     }
     result.result = true;

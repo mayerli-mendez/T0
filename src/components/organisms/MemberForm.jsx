@@ -114,7 +114,7 @@ export const MemberForm = ({ member }) => {
             Swal.fire({
 				position: 'center',
 				icon: 'warning',
-				title: 'Debes ingresar los campos correctamente',
+				title:error.response.data.message,
 				showConfirmButton: false,
 				timer: 1500
 			})
